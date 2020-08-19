@@ -1,0 +1,98 @@
+:root {
+  --col-width: 8.33333333333%;
+  /* box shadow */
+--box:0 0 2px #cecaca;
+}
+.container h1 {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container img{
+  margin-left: 22%;
+  width: 200px;
+  height: 200px;
+}
+
+.row {
+  display: flex;
+  margin-block-end: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: var(--box);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+.col-1 {
+  width: var(--col-width);
+}
+
+.col-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-3 {
+  width: calc(var(--col-width) * 3);
+}
+
+.col-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-6 {
+  width: calc(var(--col-width) * 6);
+}
+
+.col-7 {
+  width: calc(var(--col-width) * 7);
+}
+
+.col-8 {
+  width: calc(var(--col-width) * 8);
+}
+
+.col-9 {
+  width: calc(var(--col-width) * 9);
+}
+
+.col-10 {
+  width: calc(var(--col-width) * 10);
+}
+
+.col-11 {
+  width: calc(var(--col-width) * 11);
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 10px;
+
+}
+
+@media (max-width:900px){
+  .row{
+    display: inherit;
+  }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    width: 100%;
+  }
+}
+
+
+/* container>row>colums */
